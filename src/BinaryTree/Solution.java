@@ -27,21 +27,21 @@ class Solution {
         return orphan;
     }
     private TreeNode getOrCreateNode(int val, int child, boolean isRight, HashMap<Integer, TreeNode> nodes){
+        TreeNode node;
         if (!nodes.containsKey(val)){
-            TreeNode node = new TreeNode(val);
+            node = new TreeNode(val);
             if (child != -1) {
                 if (isRight) node.right = getOrCreateNode(child, -1, true, nodes);
                 else node.left = getOrCreateNode(child, -1, false, nodes);
             }
             nodes.put(val, node);
-            return node;
         }else {
-            TreeNode node = nodes.get(val);
+            node = nodes.get(val);
             if (child != -1) {
                 if (isRight) node.right = getOrCreateNode(child, -1, true, nodes);
                 else node.left = getOrCreateNode(child, -1, false, nodes);
             }
-            return node;
         }
+        return node;
     }
 }
