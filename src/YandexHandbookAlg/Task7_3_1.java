@@ -18,7 +18,7 @@ public class Task7_3_1 {
     }
 
     private static void quickSortRandom(int[] arr, int start, int end){
-        if (end <= start) return;
+        if (end-1 <= start) return;
         int random;
         do {
             random = (int) (Math.random() * end);
@@ -27,29 +27,16 @@ public class Task7_3_1 {
         arr[random] = arr[end-1];
         arr[end-1] = pivot;
         int pointer = start;
-        int rp = end-1;
-        int i = start;
-        while (i<=rp) {
-            if (arr[i] < pivot){
+        for (int i = start; i < end; i++) {
+            if (arr[i] <= pivot){
                 int a = arr[i];
                 arr[i] = arr[pointer];
                 arr[pointer] = a;
                 pointer++;
-                i++;
-            }
-            else if (arr[i]==pivot){
-                i++;
-            }
-            else {
-                int a = arr[i];
-                arr[i] = arr[rp];
-                arr[rp] = a;
-                rp--;
             }
         }
-
         pointer--;
         quickSortRandom(arr, start, pointer);
-        quickSortRandom(arr, rp+1, end);
+        quickSortRandom(arr, pointer+1, end);
     }
 }
