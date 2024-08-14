@@ -6,8 +6,9 @@ class Solution {
 
     private final List<List<Integer>> combinations = new ArrayList<>();
     private final Set<List<Integer>> seen = new HashSet<>();
+
     public static void main(String[] args) {
-        System.out.println(new Solution().combinationSum(new int[]{2,3,6,7}, 7));
+        System.out.println(new Solution().combinationSum(new int[]{2, 3, 6, 7}, 7));
     }
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -28,7 +29,7 @@ class Solution {
             if (candidates[i] > target) break;
             path.add(candidates[i]);
             backtracking(i, target - candidates[i], candidates, path);
-            backtracking(i+1, target - candidates[i], candidates, path);
+            backtracking(i + 1, target - candidates[i], candidates, path);
             path.removeLast();
         }
     }
