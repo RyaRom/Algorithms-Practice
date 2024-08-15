@@ -1,4 +1,4 @@
-package KthLargest;
+package kthLargest;
 
 import java.util.*;
 

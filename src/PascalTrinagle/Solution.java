@@ -1,4 +1,4 @@
-package PascalTrinagle;
+package pascalTrinagle;
 
 import java.util.ArrayList;
 import java.util.List;

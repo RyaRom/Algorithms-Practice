@@ -1,4 +1,4 @@
-package WaitingLineRestaurant;
+package waitingLineRestaurant;
 
 class Solution {
     public static void main(String[] args) {

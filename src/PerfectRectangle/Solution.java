@@ -1,4 +1,4 @@
-package PerfectRectangle;
+package perfectRectangle;
 
 import java.util.HashSet;
 import java.util.Set;

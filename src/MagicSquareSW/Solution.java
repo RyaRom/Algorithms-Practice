@@ -1,4 +1,4 @@
-package MagicSquareSW;
+package magicSquareSW;
 
 class Solution {
     private final int[][][] magicSquares = new int[][][]{

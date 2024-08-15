@@ -1,4 +1,4 @@
-package Pillows;
+package pillows;
 
 class Solution {
     public int passThePillow(int n, int time) {

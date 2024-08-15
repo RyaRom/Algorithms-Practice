@@ -1,4 +1,4 @@
-package BinaryTreeDelete;
+package binaryTreeDelete;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package RegionsCut;
+package regionsCut;
 
 import java.util.HashMap;
 

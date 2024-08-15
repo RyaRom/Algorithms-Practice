@@ -1,4 +1,4 @@
-package RestoreMatrix;
+package restoreMatrix;
 
 class Solution {
     public int[][] restoreMatrix(int[] rowSum, int[] colSum) {

@@ -1,4 +1,4 @@
-package BinaryTreePath;
+package binaryTreePath;
 
 
 public class TreeNode {

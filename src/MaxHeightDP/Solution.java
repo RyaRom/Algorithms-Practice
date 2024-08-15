@@ -1,4 +1,4 @@
-package MaxHeightDP;
+package maxHeightDP;
 
 class Solution {
 

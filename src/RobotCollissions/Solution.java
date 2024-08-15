@@ -1,4 +1,4 @@
-package RobotCollissions;
+package robotCollissions;
 
 import java.util.*;
 

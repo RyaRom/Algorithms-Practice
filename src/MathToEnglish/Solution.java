@@ -1,4 +1,4 @@
-package MathToEnglish;
+package mathToEnglish;
 
 class Solution {
     public String numberToWords(int num) {

@@ -1,4 +1,4 @@
-package BinaryTreeConstruction;
+package binaryTreeConstruction;
 
 
 import java.util.*;

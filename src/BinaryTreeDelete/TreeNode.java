@@ -1,4 +1,4 @@
-package BinaryTreeDelete;
+package binaryTreeDelete;
 
 public class TreeNode {
     int val;

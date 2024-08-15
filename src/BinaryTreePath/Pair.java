@@ -1,4 +1,4 @@
-package BinaryTreePath;
+package binaryTreePath;
 
 public class Pair<T extends TreeNode, T1 extends String> {
     TreeNode key;

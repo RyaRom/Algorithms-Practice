@@ -1,4 +1,4 @@
-package FloydWarshall;
+package floydWarshall;
 
 import java.util.Arrays;
 

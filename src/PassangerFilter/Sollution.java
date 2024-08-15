@@ -1,4 +1,4 @@
-package PassangerFilter;
+package passangerFilter;
 
 import java.util.Arrays;
 

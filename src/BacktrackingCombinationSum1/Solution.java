@@ -1,4 +1,4 @@
-package BacktrackingCombinationSum1;
+package backtrackingCombinationSum1;
 
 import java.util.*;
 

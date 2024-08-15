@@ -1,4 +1,4 @@
-package MinimumOperationsArray;
+package minimumOperationsArray;
 
 class Solution {
     public int minOperations(int n) {

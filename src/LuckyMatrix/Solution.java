@@ -1,4 +1,4 @@
-package LuckyMatrix;
+package luckyMatrix;
 
 import java.util.Arrays;
 import java.util.List;

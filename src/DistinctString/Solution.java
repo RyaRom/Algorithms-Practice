@@ -1,4 +1,4 @@
-package DistinctString;
+package distinctString;
 
 import java.util.HashMap;
 import java.util.Map;

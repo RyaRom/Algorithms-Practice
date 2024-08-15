@@ -1,4 +1,4 @@
-package NameSorting;
+package nameSorting;
 
 
 import java.util.Arrays;

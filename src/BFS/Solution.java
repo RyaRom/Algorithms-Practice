@@ -1,6 +1,5 @@
-package BFS;
+package bfs;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 class Solution {

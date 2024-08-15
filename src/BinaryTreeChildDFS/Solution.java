@@ -1,4 +1,4 @@
-package BinaryTreeChildDFS;
+package binaryTreeChildDFS;
 
 import java.util.HashMap;
 import java.util.HashSet;

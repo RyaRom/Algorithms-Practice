@@ -1,4 +1,4 @@
-package FolderLog;
+package folderLog;
 
 class Solution {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DisconectedIslands;
+package disconectedIslands;
 
 class Solution {
 

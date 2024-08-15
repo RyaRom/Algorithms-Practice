@@ -1,4 +1,4 @@
-package MappingAndSorting;
+package mappingAndSorting;
 
 import java.util.*;
 

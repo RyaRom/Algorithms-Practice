@@ -1,4 +1,4 @@
-package SortByFrequency;
+package sortByFrequency;
 
 import java.util.*;
 

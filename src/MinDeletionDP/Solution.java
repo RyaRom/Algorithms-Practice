@@ -1,4 +1,4 @@
-package MinDeletionDP;
+package minDeletionDP;
 
 class Solution {
     public static void main(String[] args) {

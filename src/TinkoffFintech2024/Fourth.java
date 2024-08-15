@@ -1,4 +1,4 @@
-package TinkoffFintech2024;
+package tinkoffFintech2024;
 
 import java.io.BufferedReader;
 import java.io.IOException;

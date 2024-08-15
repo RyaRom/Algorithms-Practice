@@ -1,4 +1,4 @@
-package BinaryTreePath;
+package binaryTreePath;
 
 import java.util.*;
 

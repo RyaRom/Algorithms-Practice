@@ -1,4 +1,4 @@
-package DesignTwitter;
+package designTwitter;
 
 import java.util.*;
 

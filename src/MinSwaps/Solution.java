@@ -1,4 +1,4 @@
-package MinSwaps;
+package minSwaps;
 
 
 

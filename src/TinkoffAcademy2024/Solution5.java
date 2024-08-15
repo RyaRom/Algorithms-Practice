@@ -1,4 +1,4 @@
-package TinkoffAcademy2024;
+package tinkoffAcademy2024;
 
 import java.io.BufferedReader;
 import java.io.IOException;

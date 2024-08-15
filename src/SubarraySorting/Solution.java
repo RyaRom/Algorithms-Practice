@@ -1,4 +1,4 @@
-package SubarraySorting;
+package subarraySorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
