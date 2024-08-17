@@ -22,7 +22,7 @@ class Solution {
         var minV = 1000000
         var index = 0
         for (i in arrays.indices) {
-            val array = arrays.get(i)
+            val array = arrays[i]
             if (array.first() < minV && i != exclude) {
                 minV = array.first()
                 index = i
@@ -35,7 +35,7 @@ class Solution {
         var maxV = -1000000
         var index = 0
         for (i in arrays.indices) {
-            val array = arrays.get(i)
+            val array = arrays[i]
             if (array.last() > maxV && i != exclude) {
                 maxV = array.last()
                 index = i
