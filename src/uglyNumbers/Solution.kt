@@ -5,7 +5,7 @@ import java.util.TreeSet
 class Solution {
     fun nthUglyNumber(n: Int): Int {
         val dp = ArrayList<Long>()
-        var toAdd = TreeSet<Long>()
+        val toAdd = TreeSet<Long>()
         toAdd.add(1)
         while (!toAdd.isEmpty()){
             val small = toAdd.first()
