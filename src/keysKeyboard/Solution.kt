@@ -1,9 +1,11 @@
 package keysKeyboard
 
+import jdk.dynalink.Operation
 import kotlin.math.min
 
 fun main() {
     println(Solution().minSteps(7))
+    func({ _, _ -> 1},{it+1})
 }
 
 class Solution {
@@ -24,4 +26,7 @@ class Solution {
         }
         return dp[n]
     }
+}
+fun func (operationA: (Int, Int) -> Int, operationB: (Int) -> Int ){
+    return
 }
