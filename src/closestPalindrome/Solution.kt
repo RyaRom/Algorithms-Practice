@@ -21,8 +21,8 @@ class Solution {
         val poly4 = "9".repeat(size - 1)
         val poly5 = "1" + "0".repeat(size - 1) + "1"
         var poly1: String
-        var poly2 = "-1"
-        var poly3 = "-1"
+        var poly2: String
+        var poly3: String
         if (size % 2 != 0) {
             val half = n.substring(0, size / 2)
             val middle = n[size / 2]
