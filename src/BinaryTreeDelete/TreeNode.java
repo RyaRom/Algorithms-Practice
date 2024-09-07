@@ -10,7 +10,7 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        return "TreeNode{" +
+        return "binaryTreeLinkedList.TreeNode{" +
                 "val=" + val +
                 ", left=" + left +
                 ", right=" + right +
