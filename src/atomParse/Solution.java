@@ -1,4 +1,4 @@
-package atomsParse;
+package atomParse;
 
 import java.util.*;
 import java.util.regex.Matcher;
