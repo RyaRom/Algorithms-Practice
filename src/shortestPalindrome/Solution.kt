@@ -1,13 +1,14 @@
 package shortestPalindrome
 
 fun main() {
-    println(Solution().shortestPalindrome(""))
+    println(Solution().shortestPalindrome("aacecaaa"))
 }
 
 class Solution {
     fun shortestPalindrome(s: String): String {
         if (s.isBlank()) return ""
-        val nearestPalindromeEnd = findBiggestPalindrome(s)
+//        val nearestPalindromeEnd = findBiggestPalindromePrefix(s)
+        val nearestPalindromeEnd = KnuthMorrisPrattAlgorithm.findBiggestPalindromePrefix(s)
         if (nearestPalindromeEnd == s.length - 1) return s
         val postfix = s.substring(nearestPalindromeEnd + 1).reversed()
         return postfix + s
@@ -26,7 +27,7 @@ class Solution {
         return true
     }
 
-    private fun findBiggestPalindrome(str: String): Int {
+    private fun findBiggestPalindromePrefix(str: String): Int {
         val chars = str.toCharArray()
         var max = 0
         for (i in chars.indices) {
