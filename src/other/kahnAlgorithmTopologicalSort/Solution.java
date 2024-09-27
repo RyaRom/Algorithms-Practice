@@ -1,4 +1,4 @@
-package topologicalSort.kahnAlgorithmTopologicalSort;
+package other.kahnAlgorithmTopologicalSort;
 
 
 import java.util.ArrayList;
