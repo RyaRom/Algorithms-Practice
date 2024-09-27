@@ -1,6 +1,5 @@
 package binarySearch.myCalendar
 
-import binarySearch.myCalendar.MyCalendar.Interval
 import java.util.*
 
 fun main() {
