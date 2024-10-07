@@ -21,7 +21,7 @@ class Solution {
 
         var first = 0
         var last = 0
-        if (min.size == 1 && (max.first() == min[0]||max.last() == min[0]) ) return true
+        if (min.size == 1 && (max.first() == min[0] || max.last() == min[0])) return true
         if (max.first() == min.first() && max.last() != min.last()) {
             while (last < min.size && max[last] == min[last]) last++
             return last == min.size
