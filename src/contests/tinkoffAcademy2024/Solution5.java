@@ -60,10 +60,10 @@ public class Solution5 {
             int node = queue.poll();
             result.add(node);
 
-            for (int nodeNeibor : graph.get(node)) {
-                ar[nodeNeibor]--;
-                if (ar[nodeNeibor] == 0) {
-                    queue.add(nodeNeibor);
+            for (int nodeNeighbor : graph.get(node)) {
+                ar[nodeNeighbor]--;
+                if (ar[nodeNeighbor] == 0) {
+                    queue.add(nodeNeighbor);
                 }
             }
         }

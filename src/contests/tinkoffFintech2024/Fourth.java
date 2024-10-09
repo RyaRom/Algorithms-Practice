@@ -3,7 +3,12 @@ package contests.tinkoffFintech2024;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Fourth {
     private static final BufferedReader fastScan = new BufferedReader(new InputStreamReader(System.in));

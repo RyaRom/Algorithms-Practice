@@ -24,7 +24,6 @@ public class Solution3 {
         int coinsInMachine = 0;
         while (candies < n){
             coins = coinsInMachine;
-//            long candyNow = 0L;
             while (true){
                 try {
                     coins += sequence.poll();

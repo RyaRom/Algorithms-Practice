@@ -9,8 +9,8 @@ public class Second {
 
     public static void main(String[] args) throws IOException {
         long a = Long.parseLong(fastScan.readLine());
-        if (a==1) System.out.println(1);
-        else if (a==0) System.out.println(0);
-        else System.out.println(4*(a-1));
+        if (a == 1) System.out.println(1);
+        else if (a == 0) System.out.println(0);
+        else System.out.println(4 * (a - 1));
     }
 }

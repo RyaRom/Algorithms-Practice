@@ -3,7 +3,14 @@ package contests.tinkoffFintech2024;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Queue;
 import java.util.stream.Collectors;
 
 public class Fifth {
@@ -21,28 +28,28 @@ public class Fifth {
 
         Queue<Integer> toDelete = new LinkedList<>();
         for (int i = 0; i < n; i++) {
-            int [] node = Arrays.stream(buggedScanner[i].split(" ")).mapToInt(Integer::parseInt).toArray();
+            int[] node = Arrays.stream(buggedScanner[i].split(" ")).mapToInt(Integer::parseInt).toArray();
             for (int j = 1; j <= node[0]; j++) {
                 node[j]--;
                 edges[i]++;
                 if (graph.containsKey(node[j])) graph.get(node[j]).add(i);
                 else graph.put(node[j], new ArrayList<>(List.of(i)));
             }
-            if (edges[i]==0)toDelete.add(i);
+            if (edges[i] == 0) toDelete.add(i);
         }
 
         List<List<Integer>> operations = new ArrayList<>();
 
         while (!toDelete.isEmpty()) {
             ArrayList<Integer> deletion = new ArrayList<>();
-            for (int td:toDelete){
-                deletion.add(td+1);
+            for (int td : toDelete) {
+                deletion.add(td + 1);
             }
             Collections.sort(deletion);
             deletion.addFirst(toDelete.size());
             operations.add(deletion);
             Queue<Integer> buffer = new LinkedList<>();
-            while (!toDelete.isEmpty()){
+            while (!toDelete.isEmpty()) {
                 int vertexToDelete = toDelete.poll();
                 if (graph.containsKey(vertexToDelete)) {
                     ArrayList<Integer> todel = graph.get(vertexToDelete);
