@@ -1,31 +1,22 @@
-package greedy.sortByFrequency;
+package greedy.sortByFrequency
 
-import java.util.Arrays;
-import java.util.HashMap;
+fun main() {
+    println(Solution().frequencySort(intArrayOf(2, 3, 1, 3, 2)).contentToString())
+}
 
 class Solution {
-    public static void main(String[] args) {
-        System.out.println(Arrays.toString(new Solution().frequencySort(new int[]{2, 3, 1, 3, 2})));
-    }
+    fun frequencySort(nums: IntArray): IntArray {
+        val freq = mutableMapOf<Int, Int>()
+        nums.forEach { i -> freq[i] = freq.getOrDefault(i, 0) + 1 }
 
-    public int[] frequencySort(int[] nums) {
-        HashMap<Integer, Integer> freq = new HashMap<>();
-        Arrays.stream(nums).boxed().forEach(i -> freq.put(i, freq.getOrDefault(i, 0) + 1));
-        Object[] fr = freq.keySet().stream().sorted((o1, o2) -> {
-            int res = Integer.compare(freq.get(o1), freq.get(o2));
-            if (res == 0) {
-                return Integer.compare(o2, o1);
-            }
-            return res;
-        }).toArray();
-        int p = 0;
-        for (Object key : fr) {
-            int len = freq.get(key) + p;
-            for (int i = p; i < len; i++) {
-                nums[i] = (int) key;
-                p++;
+        val sortedKeys = freq.keys.sortedWith(compareBy({ freq[it] }, { -it })).toTypedArray()
+
+        var p = 0
+        for (key in sortedKeys) {
+            repeat(freq[key]!!) {
+                nums[p++] = key
             }
         }
-        return nums;
+        return nums
     }
 }
