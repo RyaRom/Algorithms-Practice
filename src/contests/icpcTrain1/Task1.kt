@@ -26,8 +26,8 @@ fun main() {
         "ITMO",
         "ITMO",
         "ITMO",
-        "ITMO",
-        "SPbSU"
+        "SPbSU",
+        "ITMO"
     )
     println(values[i-1995])
 }
