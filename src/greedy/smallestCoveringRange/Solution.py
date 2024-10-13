@@ -1,6 +1,7 @@
 import heapq
 from typing import List
 
+
 class Solution:
     def smallestRange(self, nums: List[List[int]]) -> List[int]:
         min_heap = []
@@ -26,4 +27,4 @@ class Solution:
         return [min_range_start, min_range_end]
 
 
-print(Solution().smallestRange([[1,2,3],[1,2,3],[1,2,3]]))
+print(Solution().smallestRange([[1, 2, 3], [1, 2, 3], [1, 2, 3]]))
